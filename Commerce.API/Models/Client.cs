@@ -2,10 +2,10 @@
 {
     public class Client
     {
-        public long ClientId { get; set; }
+        public Guid ClientId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public List<Order> ClientOrders { get; set; }
+        public List<Order>? ClientOrders { get; set; }
 
         public Client(string name, string surname)
         {
